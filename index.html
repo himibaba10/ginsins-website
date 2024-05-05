@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+
+    <!-- CSS for google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <style>
+      * {
+        font-family: "Ubuntu", sans-serif;
+      }
+
+      /* Styles for swiper slider */
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-button-next,
+      .swiper-button-prev {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #4e2d7f;
+        color: white;
+      }
+
+      .swiper-button-next::after,
+      .swiper-button-prev::after {
+        font-size: 30px;
+      }
+    </style>
+
+    <title>GINSIN</title>
+  </head>
+  <body>
+    <main class="overflow-x-hidden">
+      <!-- First section -->
+      <section
+        class="flex bg-[url(/assets/Hero_bg.jpeg)] min-h-[90vh] bg-cover sm:bg-[length:100%_100%] bg-center sm:bg-right bg-no-repeat text-white px-2 md:px-10 lg:px-20"
+      >
+        <div class="w-full max-w-[1600px] mx-auto">
+          <div class="w-full lg:w-5/12 flex flex-col items-center h-full">
+            <!-- Skull logo -->
+            <div class="fixed top-0 z-40">
+              <div class="w-20 h-32 lg:w-40 lg:h-48 bg-[#4e2d7f] mx-auto"></div>
+              <img
+                class="w-40 lg:w-96 max-w-full mx-auto -mt-32 drop-shadow-[0_0px_15px_rgba(255,255,255,0.7)]"
+                src="./assets/Logo.svg"
+                alt=""
+              />
+            </div>
+            <div class="flex-1 mt-60 lg:mt-[450px] text-center">
+              <h1 class="text-7xl lg:text-9xl font-bold">GINSINS</h1>
+              <p class="leading-loose text-xl mt-2 mb-6">
+                There is already plenty of regular gin, so if you are looking
+                for something special, choose GINSINS.
+              </p>
+              <p class="text-4xl font-medium mb-6">Dare to be different</p>
+            </div>
+            <div class="w-20 h-32 lg:w-40 lg:h-48 bg-[#4e2d7f]"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section with bottom arrow -->
+      <section class="my-10">
+        <a href="#second-section">
+          <img
+            class="animate-bounce cursor-pointer mx-auto w-12 px-3 py-5 rounded-xl border border-[#4e2d7f]"
+            src="./assets/Bottom Arrow.svg"
+            alt=""
+          />
+        </a>
+      </section>
+
+      <!-- Second section -->
+      <section
+        id="second-section"
+        class="my-10 lg:my-20 px-2 md:px-10 lg:px-20 flex flex-col lg:flex-row justify-between items-center gap-5 lg:gap-10 max-w-[1600px] mx-auto"
+      >
+        <div class="w-full lg:w-5/12 text-center">
+          <h2
+            class="text-5xl lg:text-7xl font-bold sm:mt-10 lg:mt-20 text-[#4e2d7f]"
+          >
+            LETS BEGIN
+          </h2>
+          <p class="text-base lg:text-xl mt-10 leading-loose">
+            Discover the irresistible taste of GINSINS gin! Let yourself be
+            enchanted by our exclusive gin, made to pamper your taste buds. Our
+            carefully selected botanicals create a unique and refined taste
+            experience with every sip.<br />Be surprised by the subtle notes of
+            herbs and three types of pepper, harmoniously coming together in
+            every drop. Equally delicious neat or mixed with a premium tonic!
+            Made with a lot of attention and love, and you can taste it. Just a
+            bit different, just a bit more...
+          </p>
+        </div>
+        <div class="w-full lg:w-7/12 relative">
+          <img
+            class="max-w-[1000px] w-full ml-auto"
+            src="./assets/Holding glasses of wine.svg"
+            alt=""
+          />
+          <img
+            class="absolute top-16 left-10 w-1/2"
+            src="./assets/Ginsins bottle.png"
+            alt=""
+          />
+          <img
+            class="absolute top-[5%] right-[5%] drop-shadow-2xl w-2/5"
+            src="./assets/Grass.svg"
+            alt=""
+          />
+
+          <img
+            class="absolute top-[40%] -right-[6%] drop-shadow-2xl w-2/5"
+            src="./assets/Dates.svg"
+            alt=""
+          />
+
+          <img
+            class="absolute top-[80%] right-[10%] drop-shadow-2xl w-2/5"
+            src="./assets/Spoon.svg"
+            alt=""
+          />
+        </div>
+      </section>
+
+      <!-- Section with bottom arrow -->
+      <section class="mt-20 my-10">
+        <a href="#third-section">
+          <img
+            class="animate-bounce cursor-pointer mx-auto w-12 px-3 py-5 rounded-xl border border-[#4e2d7f]"
+            src="./assets/Bottom Arrow.svg"
+            alt=""
+          />
+        </a>
+      </section>
+
+      <!-- Third section -->
+      <section
+        id="third-section"
+        class="my-10 lg:my-20 w-full max-w-[1600px] mx-auto px-2 md:px-10 lg:px-20 flex flex-col lg:flex-row items-center gap-10"
+      >
+        <div class="w-full lg:w-5/12 text-center">
+          <h2 class="text-5xl lg:text-7xl font-bold lg:mt-20 text-[#4e2d7f]">
+            LETS ORDER
+          </h2>
+          <p class="text-base lg:text-xl mt-10 leading-loose">
+            GINSINS is a gin that is not available wholesale. Our exclusive gin
+            is available in various catering establishments at home and abroad
+            and via the contact form on this site.
+          </p>
+        </div>
+        <div class="w-full lg:w-7/12 relative">
+          <img
+            class="w-full sm:w-3/4 mx-auto"
+            src="./assets/Ginsins bottle 1.png"
+            alt=""
+          />
+        </div>
+      </section>
+
+      <!-- Section with bottom arrow -->
+      <section class="my-10">
+        <a href="#fourth-section">
+          <img
+            class="animate-bounce cursor-pointer mx-auto w-12 px-3 py-5 rounded-xl border border-[#4e2d7f]"
+            src="./assets/Bottom Arrow.svg"
+            alt=""
+          />
+        </a>
+      </section>
+
+      <!-- Fourth section -->
+      <section
+        id="fourth-section"
+        class="mt-10 lg:my-20 w-full max-w-[1600px] mx-auto px-2 md:px-10 lg:px-20 flex flex-col lg:flex-row gap-0 lg:gap-40 items-center"
+      >
+        <div class="w-full lg:w-1/2 text-center relative">
+          <h2 class="text-5xl lg:text-7xl font-bold lg:mt-20 text-[#4e2d7f]">
+            LET’S ENJOY
+          </h2>
+          <p class="text-base lg:text-xl mt-10 leading-loose">
+            Lendaepe rchilla ndandae dolupta cus dollorit etur aut res-
+            tionsenis reheni de cus, nate nis audis sequi tem aut quatur aut
+            excepuda vera nem quae evelibus, cone sam ducipis et lab iminctia
+            quo berios audae voloreperum que pe et alitis eatempor mos di
+            officabo. Ro ma dolor sandi.
+          </p>
+          <img class="ml-auto" src="./assets/Cheers.svg" alt="" />
+        </div>
+        <div class="w-full lg:w-1/2 relative">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide px-8 py-20">
+                <div>
+                  <img
+                    class="rounded-full"
+                    src="./assets/Glass of wine.jpeg"
+                    alt=""
+                  />
+                  <div class="mx-auto w-3/4 h-3 bg-gray-500 blur-xl mt-5"></div>
+                </div>
+              </div>
+              <div class="swiper-slide px-8 py-20">
+                <div>
+                  <img
+                    class="rounded-full"
+                    src="./assets/Glass of wine.jpeg"
+                    alt=""
+                  />
+                  <div class="mx-auto w-3/4 h-3 bg-gray-500 blur-xl mt-5"></div>
+                </div>
+              </div>
+              <div class="swiper-slide px-8 py-20">
+                <div>
+                  <img
+                    class="rounded-full"
+                    src="./assets/Glass of wine.jpeg"
+                    alt=""
+                  />
+                  <div class="mx-auto w-3/4 h-3 bg-gray-500 blur-xl mt-5"></div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section with bottom arrow -->
+      <section class="mb-10 lg:my-10 relative z-20">
+        <a href="#last-section">
+          <img
+            class="animate-bounce cursor-pointer mx-auto w-12 px-3 py-5 rounded-xl border border-[#4e2d7f]"
+            src="./assets/Bottom Arrow.svg"
+            alt=""
+          />
+        </a>
+      </section>
+
+      <!-- Last section -->
+      <section
+        id="last-section"
+        class="mb-10 lg:my-20 w-full max-w-[1600px] mx-auto px-2 md:px-10 lg:px-20 flex flex-col lg:flex-row justify-between items-center gap-10 lg:gap-20"
+      >
+        <div class="w-full lg:w-1/2 text-center relative">
+          <h2 class="text-5xl lg:text-7xl font-bold lg:mt-20 text-[#4e2d7f]">
+            LET’S ENJOY
+          </h2>
+          <p class="text-base lg:text-xl mt-10 leading-loose">
+            Lendaepe rchilla ndandae dolupta cus dollorit etur aut res-
+            tionsenis reheni de cus, nate nis audis sequi tem aut quatur aut
+            excepuda vera nem quae evelibus, cone sam ducipis et lab iminctia
+            quo berios audae voloreperum que pe et alitis eatempor mos di
+            officabo. Ro ma dolor sandi.
+          </p>
+          <img class="ml-auto" src="./assets/Cheers.svg" alt="" />
+        </div>
+        <div class="w-full lg:w-1/2 relative">
+          <form
+            class="w-full max-w-lg ml-auto mr-auto lg:mr-0 border-2 border-[#4e2d7f] p-5 lg:p-10"
+          >
+            <div>
+              <label class="text-lg text-[#4e2d7f] mb-2 inline-block" for="name"
+                >Enter Name</label
+              >
+              <input
+                type="text"
+                id="name"
+                class="border border-[#4e2d7f] w-full p-3.5 shadow-md"
+              />
+            </div>
+            <div class="my-5">
+              <label
+                class="text-lg text-[#4e2d7f] mb-2 inline-block"
+                for="email"
+                >Enter Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                class="border border-[#4e2d7f] w-full p-3.5 shadow-md"
+              />
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              class="w-full bg-[#4e2d7f] text-white p-4 text-xl mt-5"
+            />
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
