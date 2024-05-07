@@ -20,6 +20,9 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
 
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <style>
       * {
         font-family: "Ubuntu", sans-serif;
@@ -68,18 +71,37 @@
             >
               <div class="w-20 h-32 lg:w-40 lg:h-48 bg-primary mx-auto"></div>
               <img
+                data-aos="zoom-in"
                 class="w-40 lg:w-96 max-w-full mx-auto -mt-32 drop-shadow-[0_0px_15px_rgba(255,255,255,0.7)] transition-all duration-300 relative"
                 src="./assets/Logo.svg"
                 alt=""
               />
             </div>
             <div class="flex-1 mt-60 lg:mt-[450px] text-center">
-              <h1 class="text-7xl lg:text-9xl font-bold">GINSINS</h1>
-              <p class="leading-loose text-xl mt-2 mb-6">
+              <h1
+                data-aos="fade-up"
+                data-aos-duration="600"
+                class="text-7xl lg:text-9xl font-bold"
+              >
+                GINSINS
+              </h1>
+              <p
+                data-aos="fade-up"
+                data-aos-duration="600"
+                data-aos-delay="150"
+                class="leading-loose text-xl mt-2 mb-6"
+              >
                 There is already plenty of regular gin, so if you are looking
                 for something special, choose GINSINS.
               </p>
-              <p class="text-4xl font-medium mb-6">Dare to be different</p>
+              <p
+                data-aos="fade-up"
+                data-aos-duration="600"
+                data-aos-delay="300"
+                class="text-4xl font-medium mb-6"
+              >
+                Dare to be different
+              </p>
             </div>
             <div class="w-20 h-32 lg:w-40 lg:h-48 bg-primary"></div>
           </div>
@@ -123,28 +145,61 @@
             src="./assets/Holding glasses of wine.svg"
             alt=""
           />
+
+          <!-- Ginsins bottle image -->
           <img
-            class="absolute top-16 left-10 w-1/2"
+            class="absolute top-16 left-10 w-1/2 animate-pulse"
             src="./assets/Ginsins bottle.png"
             alt=""
           />
-          <img
-            class="absolute top-[5%] right-[5%] drop-shadow-2xl w-2/5"
-            src="./assets/Grass.svg"
-            alt=""
-          />
 
-          <img
-            class="absolute top-[40%] -right-[6%] drop-shadow-2xl w-2/5"
-            src="./assets/Dates.svg"
-            alt=""
-          />
+          <!-- First circle image -->
+          <div
+            class="w-[23%] aspect-square rounded-full overflow-hidden absolute top-[5%] right-[9%] group shadow-[3px_3px_2px_0px_rgba(0,0,0,0.3)]"
+          >
+            <img
+              class="w-full h-full object-cover"
+              src="./assets/Grass.webp"
+              alt=""
+            />
+            <img
+              class="w-full h-full object-cover absolute top-0 left-0 scale-0 group-hover:scale-100 transition duration-500 rounded-full"
+              src="./assets/Spoon.webp"
+              alt=""
+            />
+          </div>
 
-          <img
-            class="absolute top-[80%] right-[10%] drop-shadow-2xl w-2/5"
-            src="./assets/Spoon.svg"
-            alt=""
-          />
+          <!-- Second circle image -->
+          <div
+            class="w-[23%] aspect-square rounded-full overflow-hidden absolute top-[44%] right-[6%] group shadow-[3px_3px_2px_0px_rgba(0,0,0,0.3)]"
+          >
+            <img
+              class="w-full h-full object-cover"
+              src="./assets/Dates.jpeg"
+              alt=""
+            />
+            <img
+              class="w-full h-full object-cover absolute top-0 left-0 scale-0 group-hover:scale-100 transition duration-500 rounded-full"
+              src="./assets/Spoon.webp"
+              alt=""
+            />
+          </div>
+
+          <!-- Third circle image -->
+          <div
+            class="w-[23%] aspect-square rounded-full overflow-hidden absolute top-[80%] right-[20%] group shadow-[3px_3px_2px_0px_rgba(0,0,0,0.3)]"
+          >
+            <img
+              class="w-full h-full object-cover"
+              src="./assets/Spoon.webp"
+              alt=""
+            />
+            <img
+              class="w-full h-full object-cover absolute top-0 left-0 scale-0 group-hover:scale-100 transition duration-500 rounded-full"
+              src="./assets/Grass.webp"
+              alt=""
+            />
+          </div>
         </div>
       </section>
 
@@ -327,6 +382,12 @@
           prevEl: ".swiper-button-prev",
         },
       });
+    </script>
+
+    <!-- AOS Library JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
 
     <!-- Custom JS -->
