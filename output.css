@@ -1108,6 +1108,10 @@ video {
     margin-top: 450px;
   }
 
+  .lg\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
   .lg\:h-48 {
     height: 12rem;
   }
