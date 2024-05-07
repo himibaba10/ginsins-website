@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
 
     <!-- CSS for google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -56,15 +57,18 @@
     <main class="overflow-x-hidden">
       <!-- First section -->
       <section
-        class="flex bg-[url(./assets/herobg.jpeg)] min-h-[90vh] bg-cover sm:bg-[length:100%_100%] bg-center sm:bg-right bg-no-repeat text-white px-2 md:px-10 lg:px-20"
+        class="flex bg-[url(./assets/herobg.jpeg)] min-h-[90vh] bg-cover bg-center sm:bg-right bg-no-repeat text-white px-2 md:px-10 lg:px-20"
       >
         <div class="w-full max-w-[1600px] mx-auto">
           <div class="w-full lg:w-5/12 flex flex-col items-center h-full">
             <!-- Skull logo -->
-            <div class="fixed top-0 z-40">
-              <div class="w-20 h-32 lg:w-40 lg:h-48 bg-[#4e2d7f] mx-auto"></div>
+            <div
+              id="skull-logo"
+              class="fixed top-0 z-40 transition-all duration-300"
+            >
+              <div class="w-20 h-32 lg:w-40 lg:h-48 bg-primary mx-auto"></div>
               <img
-                class="w-40 lg:w-96 max-w-full mx-auto -mt-32 drop-shadow-[0_0px_15px_rgba(255,255,255,0.7)]"
+                class="w-40 lg:w-96 max-w-full mx-auto -mt-32 drop-shadow-[0_0px_15px_rgba(255,255,255,0.7)] transition-all duration-300 relative"
                 src="./assets/Logo.svg"
                 alt=""
               />
@@ -77,7 +81,7 @@
               </p>
               <p class="text-4xl font-medium mb-6">Dare to be different</p>
             </div>
-            <div class="w-20 h-32 lg:w-40 lg:h-48 bg-[#4e2d7f]"></div>
+            <div class="w-20 h-32 lg:w-40 lg:h-48 bg-primary"></div>
           </div>
         </div>
       </section>
@@ -86,7 +90,7 @@
       <section class="my-10">
         <a href="#second-section">
           <img
-            class="animate-bounce cursor-pointer mx-auto w-12 px-3 py-5 rounded-xl border border-[#4e2d7f]"
+            class="animate-bounce cursor-pointer mx-auto w-12 px-3 py-5 rounded-xl border border-primary"
             src="./assets/Bottom Arrow.svg"
             alt=""
           />
@@ -99,12 +103,10 @@
         class="my-10 lg:my-20 px-2 md:px-10 lg:px-20 flex flex-col lg:flex-row justify-between items-center gap-5 lg:gap-10 max-w-[1600px] mx-auto"
       >
         <div class="w-full lg:w-5/12 text-center">
-          <h2
-            class="text-5xl lg:text-7xl font-bold sm:mt-10 lg:mt-20 text-[#4e2d7f]"
-          >
-            LETS BEGIN
+          <h2 class="text-5xl lg:text-7xl sm:mt-10 lg:mt-20 text-primary">
+            LETS BE<span class="font-semibold">GIN</span>
           </h2>
-          <p class="text-base lg:text-xl mt-10 leading-loose">
+          <p class="text-base lg:text-xl mt-10 !leading-loose text-primary">
             Discover the irresistible taste of GINSINS gin! Let yourself be
             enchanted by our exclusive gin, made to pamper your taste buds. Our
             carefully selected botanicals create a unique and refined taste
@@ -150,7 +152,7 @@
       <section class="mt-20 my-10">
         <a href="#third-section">
           <img
-            class="animate-bounce cursor-pointer mx-auto w-12 px-3 py-5 rounded-xl border border-[#4e2d7f]"
+            class="animate-bounce cursor-pointer mx-auto w-12 px-3 py-5 rounded-xl border border-primary"
             src="./assets/Bottom Arrow.svg"
             alt=""
           />
@@ -163,14 +165,18 @@
         class="my-10 lg:my-20 w-full max-w-[1600px] mx-auto px-2 md:px-10 lg:px-20 flex flex-col lg:flex-row items-center gap-10"
       >
         <div class="w-full lg:w-5/12 text-center">
-          <h2 class="text-5xl lg:text-7xl font-bold lg:mt-20 text-[#4e2d7f]">
-            LETS ORDER
-          </h2>
-          <p class="text-base lg:text-xl mt-10 leading-loose">
+          <h2 class="text-5xl lg:text-7xl lg:mt-20 text-primary">LETS ORDER</h2>
+          <p class="text-base lg:text-xl mt-10 !leading-loose text-primary">
             GINSINS is a gin that is not available wholesale. Our exclusive gin
             is available in various catering establishments at home and abroad
             and via the contact form on this site.
           </p>
+          <a
+            href="#last-section"
+            class="mt-20 bg-primary text-white px-10 py-4 rounded-2xl text-xl shadow-[0_0px_20px_0px_rgba(0,0,0,0.6)] shadow-primary inline-block hover:scale-110 hover:-translate-y-4 transition-all"
+          >
+            Contact Form
+          </a>
         </div>
         <div class="w-full lg:w-7/12 relative">
           <img
@@ -185,7 +191,7 @@
       <section class="my-10">
         <a href="#fourth-section">
           <img
-            class="animate-bounce cursor-pointer mx-auto w-12 px-3 py-5 rounded-xl border border-[#4e2d7f]"
+            class="animate-bounce cursor-pointer mx-auto w-12 px-3 py-5 rounded-xl border border-primary"
             src="./assets/Bottom Arrow.svg"
             alt=""
           />
@@ -198,17 +204,21 @@
         class="mt-10 lg:my-20 w-full max-w-[1600px] mx-auto px-2 md:px-10 lg:px-20 flex flex-col lg:flex-row gap-0 lg:gap-40 items-center"
       >
         <div class="w-full lg:w-1/2 text-center relative">
-          <h2 class="text-5xl lg:text-7xl font-bold lg:mt-20 text-[#4e2d7f]">
+          <h2 class="text-5xl lg:text-7xl lg:mt-20 text-primary">
             LET’S ENJOY
           </h2>
-          <p class="text-base lg:text-xl mt-10 leading-loose">
+          <p class="text-base lg:text-xl mt-10 !leading-loose text-primary">
             Lendaepe rchilla ndandae dolupta cus dollorit etur aut res-
             tionsenis reheni de cus, nate nis audis sequi tem aut quatur aut
             excepuda vera nem quae evelibus, cone sam ducipis et lab iminctia
             quo berios audae voloreperum que pe et alitis eatempor mos di
             officabo. Ro ma dolor sandi.
           </p>
-          <img class="ml-auto" src="./assets/Cheers.svg" alt="" />
+          <img
+            class="ml-auto translate-x-14"
+            src="./assets/Cheers.svg"
+            alt=""
+          />
         </div>
         <div class="w-full lg:w-1/2 relative">
           <div class="swiper mySwiper">
@@ -254,7 +264,7 @@
       <section class="mb-10 lg:my-10 relative z-20">
         <a href="#last-section">
           <img
-            class="animate-bounce cursor-pointer mx-auto w-12 px-3 py-5 rounded-xl border border-[#4e2d7f]"
+            class="animate-bounce cursor-pointer mx-auto w-12 px-3 py-5 rounded-xl border border-primary"
             src="./assets/Bottom Arrow.svg"
             alt=""
           />
@@ -267,7 +277,7 @@
         class="mb-10 lg:my-20 w-full max-w-[1600px] mx-auto px-2 md:px-10 lg:px-20 flex flex-col lg:flex-row justify-between items-center gap-10 lg:gap-20"
       >
         <div class="w-full lg:w-1/2 text-center relative">
-          <h2 class="text-5xl lg:text-7xl font-bold lg:mt-20 text-[#4e2d7f]">
+          <h2 class="text-5xl lg:text-7xl font-bold lg:mt-20 text-primary">
             LET’S ENJOY
           </h2>
           <p class="text-base lg:text-xl mt-10 leading-loose">
@@ -281,34 +291,32 @@
         </div>
         <div class="w-full lg:w-1/2 relative">
           <form
-            class="w-full max-w-lg ml-auto mr-auto lg:mr-0 border-2 border-[#4e2d7f] p-5 lg:p-10"
+            class="w-full max-w-lg ml-auto mr-auto lg:mr-0 border-2 border-primary p-5 lg:p-10"
           >
             <div>
-              <label class="text-lg text-[#4e2d7f] mb-2 inline-block" for="name"
+              <label class="text-lg text-primary mb-2 inline-block" for="name"
                 >Enter Name</label
               >
               <input
                 type="text"
                 id="name"
-                class="border border-[#4e2d7f] w-full p-3.5 shadow-md"
+                class="border border-primary w-full p-3.5 shadow-md"
               />
             </div>
             <div class="my-5">
-              <label
-                class="text-lg text-[#4e2d7f] mb-2 inline-block"
-                for="email"
+              <label class="text-lg text-primary mb-2 inline-block" for="email"
                 >Enter Email</label
               >
               <input
                 type="email"
                 id="email"
-                class="border border-[#4e2d7f] w-full p-3.5 shadow-md"
+                class="border border-primary w-full p-3.5 shadow-md"
               />
             </div>
             <input
               type="submit"
               value="Submit"
-              class="w-full bg-[#4e2d7f] text-white p-4 text-xl mt-5"
+              class="w-full bg-primary text-white p-4 text-xl mt-5 cursor-pointer hover:scale-90 transition-all"
             />
           </form>
         </div>
@@ -325,6 +333,23 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+      });
+    </script>
+
+    <!-- Custom JS -->
+    <script>
+      const skullLogoContainer = document.querySelector("#skull-logo");
+      const skullLogo = document.querySelector("#skull-logo img");
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 400 && window.innerWidth > 767) {
+          skullLogo.style.transform = "scale(0.6)";
+          skullLogo.style.top = "-7rem";
+          skullLogoContainer.style.top = "-2rem";
+        } else {
+          skullLogo.style.transform = "scale(1)";
+          skullLogo.style.top = "0rem";
+          skullLogoContainer.style.top = "0rem";
+        }
       });
     </script>
   </body>
